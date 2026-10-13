@@ -1,0 +1,44 @@
+{
+  "umumiy_statistika": {
+    "ishlangan_savollar": 30,
+    "togri_javoblar": 20,
+    "ortacha_aniqlik_foizi": 67,
+    "oxirgi_test_foizi": 50,
+    "dinamika": "2-kun Conditionals murakkab mavzusi bo'yicha tahlil"
+  },
+  "zaif_nuqtalar": [
+    {
+      "mavzu": "Mixed Conditionals (O'tmishdagi ish ➔ Hozirgi natija: would + V1 + now)",
+      "tavsiya": "Gap oxiridagi 'now/today' so'ziga qarab, would have emas, balki would + V1 qo'yish kerak"
+    },
+    {
+      "mavzu": "Unless bog'lovchisi (Inkor qoidasi)",
+      "tavsiya": "Unless dan keyin don't/doesn't kelmaydi, fe'l ijobiy shaklda bo'ladi"
+    },
+    {
+      "mavzu": "In case vs If",
+      "tavsiya": "In case ehtiyot chorasi ma'nosida ishlatiladi"
+    }
+  ],
+  "kuchli_tomonlar": [
+    "Type 3 Conditionals (Had known... would have called) — 100% to'g'ri",
+    "Zero Conditional (Ilmiy fakt) — to'liq o'zlashtirildi",
+    "TBL Metodika dars bosqichlari — mukammal!"
+  ],
+  "kunlik_tarix": [
+    {
+      "kun": 1,
+      "mavzular": "Inversion & PPP",
+      "foiz": 70
+    },
+    {
+      "kun": 2,
+      "sana": "2026-10-14",
+      "mavzular": "Conditionals & TBL Metodika",
+      "jami_savol": 10,
+      "togri": 5,
+      "foiz": 50,
+      "xulosa": "Shart ergash gaplar va aralash shart gaplar bo'yicha takrorlash talab etiladi"
+    }
+  ]
+}

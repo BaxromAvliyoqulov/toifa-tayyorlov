@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Toifa Pro — Ingliz Tili Attestatsiya Platformasi (2026)</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Toifa Pro">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Telegram Mini App SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="sidebar-top">
+        <div class="brand-box">
+          <div class="brand-logo">🎯</div>
+          <div class="brand-info">
+            <h2>TOIFA PRO</h2>
+            <span>2026 Attestatsiya</span>
+          </div>
+        </div>
+        <button class="sidebar-close-btn" id="sidebarCollapseBtn" title="Yon menyuni yashirish" aria-label="Yon menyuni yashirish">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- MAIN NAVIGATION -->
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-tab="theory">
+          <span class="nav-icon">📖</span>
+          <span class="nav-text">Chuqur Dars (Nazariya)</span>
+        </button>
+        <button class="nav-btn" data-tab="exam">
+          <span class="nav-icon">✍️</span>
+          <span class="nav-text">Kunlik Test (10 ta)</span>
+        </button>
+        <button class="nav-btn highlight" data-tab="finalExam">
+          <span class="nav-icon">🏆</span>
+          <span class="nav-text">UzBMB Mock (50 ta)</span>
+        </button>
+        <button class="nav-btn" data-tab="analytics">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Natija & Diagnostika</span>
+        </button>
+      </nav>
+
+      <!-- 30-DAY SYLLABUS LIST WITH ACCORDION -->
+      <div class="syllabus-panel" id="syllabusPanel">
+        <div class="syllabus-title-bar" id="syllabusAccordionToggle" role="button" tabindex="0">
+          <div class="st-left">
+            <span>📚 DARSLAR JADVALI (30 KUN)</span>
+          </div>
+          <div class="st-right">
+            <span class="badge-mini" id="syllabusProgressBadge">1 / 30</span>
+            <span class="accordion-chevron" id="syllabusChevron">▾</span>
+          </div>
+        </div>
+        <div class="syllabus-list" id="syllabusList">
+          <!-- Dynamically generated lesson cards with completion toggles -->
+        </div>
+      </div>
+
+      <!-- COUNTDOWN FOOTER -->
+      <div class="sidebar-countdown">
+        <div class="cd-title">IMTIHON KUNI: 30-OKTABR</div>
+        <div class="cd-number">17 KUN QOLDI</div>
+        <div class="cd-bar"><div class="cd-bar-fill" style="width: 45%;"></div></div>
+      </div>
+    </aside>
+
+    <!-- MAIN APP CANVAS -->
+    <main class="app-main">
+      <!-- HEADER -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="sidebar-open-btn" id="sidebarFloatingOpenBtn" title="Yon menyuni ochish" aria-label="Yon menyuni ochish" style="display: none;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="header-heading">
+            <h1 id="pageMainHeading">Dars Yuklanmoqda...</h1>
+            <p id="pageSubHeading">O'zbekcha chuqur tushuntirish va toifa me'yorlari</p>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="tier-pill">
+            <span class="pill-dot"></span>
+            <span class="pill-text">Mutaxassis ➔ 2-Toifa</span>
+          </div>
+          <div class="score-pill" id="headerScorePill">
+            Oxirgi test: <strong>0%</strong>
+          </div>
+        </div>
+      </header>
+
+      <!-- APP CONTENT BODY -->
+      <div class="app-body">
+        
+        <!-- 1. TAB: THEORY -->
+        <section id="theoryTab" class="content-tab active">
+          <div class="theory-split-layout">
+            <div class="theory-main-area">
+              <div class="theory-wrapper" id="theoryWrapper">
+                <!-- Dynamic lesson content injected here -->
+              </div>
+            </div>
+            <aside class="theory-aside-area">
+              <div class="theory-sticky-card">
+                <div class="tac-badge">⚡ BUGUNGI MAQSAD</div>
+                <h3 class="tac-title" id="asideDayTitle">Dars Rejasi</h3>
+                <div class="tac-summary-box">
+                  <h4>🎯 Darsning Asosiy Kalitlari:</h4>
+                  <ul id="asideDayBulletList">
+                    <li>Grammatika formulasi va qoliplar</li>
+                    <li>O'zbek tiliga qiyosiy tushuntirish</li>
+                    <li>Pedagogik metodika va dars bosqichlari</li>
+                  </ul>
+                </div>
+                <div class="tac-trap-box">
+                  <strong>⚠️ Attestatsiya Tuzog'i:</strong>
+                  <span id="asideTrapText">Savollardagi shoshqaloqlik va chalg'ituvchi variantlardan ehtiyot bo'ling!</span>
+                </div>
+                <div class="tac-btn-box">
+                  <button class="btn btn-primary btn-lg w-full" id="theoryGoTestBtn">
+                    ✍️ Testga O'tish (10 ta) ➔
+                  </button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- 2. TAB: DAILY EXAM (10 QUESTIONS) -->
+        <section id="examTab" class="content-tab">
+          <!-- EXAM LOBBY -->
+          <div class="exam-lobby-view" id="dailyLobby">
+            <div class="lobby-box">
+              <div class="lobby-badge">KUNLIK SINOV</div>
+              <h2 id="lobbyLessonTitle">1-Kun Testi</h2>
+              <p>Attestatsiya standarti bo'yicha 10 ta tasodifiy savol. O'z bilimingizni mustahkamlang.</p>
+              <div class="lobby-meta-row">
+                <div class="meta-card">
+                  <span class="meta-val">10</span>
+                  <span class="meta-lbl">Savollar</span>
+                </div>
+                <div class="meta-card">
+                  <span class="meta-val">10:00</span>
+                  <span class="meta-lbl">Vaqt me'yori</span>
+                </div>
+                <div class="meta-card">
+                  <span class="meta-val">70%</span>
+                  <span class="meta-lbl">O'tish me'yori</span>
+                </div>
+              </div>
+              <button class="btn btn-success btn-xl" id="dailyStartBtn">🚀 Testni Boshlash</button>
+            </div>
+          </div>
+
+          <!-- ACTIVE EXAM ARENA -->
+          <div class="exam-arena-view" id="dailyArena" style="display: none;">
+            <div class="arena-bar">
+              <div class="arena-progress">
+                <span>Savol <strong id="dailyQNum">1</strong> / 10</span>
+                <div class="arena-progress-bar"><div class="arena-bar-fill" id="dailyProgressBar" style="width: 10%;"></div></div>
+              </div>
+              <div class="arena-timer" id="dailyTimerBox">
+                ⏱️ Qolgan vaqt: <span id="dailyTimerDigits">10:00</span>
+              </div>
+            </div>
+
+            <div class="arena-widescreen-grid">
+              <div class="arena-main-content">
+                <div class="question-surface" id="dailyQuestionCard">
+                  <div class="q-body" id="dailyQText">Yuklanmoqda...</div>
+                  <div class="options-stack" id="dailyOptionsBox"></div>
+                </div>
+
+                <div class="arena-nav">
+                  <button class="btn btn-subtle" id="dailyPrevBtn" disabled>⬅️ Oldingisi</button>
+                  <button class="btn btn-primary" id="dailyNextBtn">Keyingisi ➡️</button>
+                  <button class="btn btn-success" id="dailyFinishBtn" style="display: none;">🏁 Testni Yakunlash</button>
+                </div>
+              </div>
+
+              <aside class="question-palette-card">
+                <div class="qp-header">
+                  <h4>Savollar Palitrasi</h4>
+                  <span class="badge-mini" id="dailyPaletteBadge">10 ta savol</span>
+                </div>
+                <div class="qp-grid" id="dailyPaletteGrid">
+                  <!-- Dynamically populated buttons 1..10 -->
+                </div>
+                <div class="qp-legend">
+                  <div class="qp-legend-row"><span class="qp-dot answered"></span> Yechilgan savol</div>
+                  <div class="qp-legend-row"><span class="qp-dot active"></span> Hozirgi savol</div>
+                  <div class="qp-legend-row"><span class="qp-dot pending"></span> Yechilmagan savol</div>
+                </div>
+              </aside>
+            </div>
+          </div>
+
+          <!-- RESULT REPORT -->
+          <div class="exam-report-view" id="dailyReport" style="display: none;">
+            <div class="report-header">
+              <div class="report-score-donut" id="dailyScoreDonut">0%</div>
+              <h2 id="dailyReportTitle">Test Natijalari</h2>
+              <p id="dailyReportSubtitle">Sizning javoblaringiz tahlili</p>
+              <div class="report-actions-row">
+                <button class="btn btn-warning" id="dailyCopyAiBtn">📋 Hisobotni AI ga Nusxalash</button>
+                <button class="btn btn-subtle" id="dailyRetryBtn">🔄 Qayta topshirish</button>
+                <button class="btn btn-primary" id="dailyGoAnalyticsBtn">📊 To'liq Diagnostikani ko'rish</button>
+              </div>
+            </div>
+            <div class="report-review-list" id="dailyReviewList"></div>
+          </div>
+        </section>
+
+        <!-- 3. TAB: FINAL UZBMB MOCK EXAM (50 QUESTIONS) -->
+        <section id="finalExamTab" class="content-tab">
+          <!-- FINAL LOBBY -->
+          <div class="exam-lobby-view" id="finalLobby">
+            <div class="lobby-box official">
+              <div class="lobby-badge gold">UZBMB / DEMOTEST 2026</div>
+              <h2>Rasmiy Davlat Attestatsiyasi Mock Imtihoni</h2>
+              <p>50 ta savol: 35 ta Mutaxassislik (Grammar/Lexis), 5 ta Reading matn tahlili, 7 ta Metodika va 3 ta Milliy kasbiy standartlar.</p>
+              <div class="lobby-meta-row">
+                <div class="meta-card">
+                  <span class="meta-val">50</span>
+                  <span class="meta-lbl">Savollar soni</span>
+                </div>
+                <div class="meta-card">
+                  <span class="meta-val">100 daq</span>
+                  <span class="meta-lbl">Rasmiy vaqt</span>
+                </div>
+                <div class="meta-card">
+                  <span class="meta-val">70 ball</span>
+                  <span class="meta-lbl">2-Toifa o'tish</span>
+                </div>
+              </div>
+              <button class="btn btn-success btn-xl" id="finalStartBtn">🏆 50 Talik Imtihonni Boshlash</button>
+            </div>
+          </div>
+
+          <!-- FINAL ACTIVE ARENA -->
+          <div class="exam-arena-view" id="finalArena" style="display: none;">
+            <div class="arena-bar">
+              <div class="arena-progress">
+                <span>Savol <strong id="finalQNum">1</strong> / 50</span>
+                <span class="badge-mini" id="finalSectionBadge">Grammar & Lexis</span>
+                <div class="arena-progress-bar"><div class="arena-bar-fill" id="finalProgressBar" style="width: 2%;"></div></div>
+              </div>
+              <div class="arena-timer" id="finalTimerBox">
+                ⏱️ Qolgan vaqt: <span id="finalTimerDigits">100:00</span>
+              </div>
+            </div>
+
+            <div class="arena-widescreen-grid">
+              <div class="arena-main-content">
+                <div class="question-surface" id="finalQuestionCard">
+                  <div class="q-body" id="finalQText" style="white-space: pre-line;">Yuklanmoqda...</div>
+                  <div class="options-stack" id="finalOptionsBox"></div>
+                </div>
+
+                <div class="arena-nav">
+                  <button class="btn btn-subtle" id="finalPrevBtn" disabled>⬅️ Oldingisi</button>
+                  <button class="btn btn-primary" id="finalNextBtn">Keyingisi ➡️</button>
+                  <button class="btn btn-success" id="finalFinishBtn" style="display: none;">🏁 Imtihonni Yakunlash</button>
+                </div>
+              </div>
+
+              <aside class="question-palette-card">
+                <div class="qp-header">
+                  <h4>50 Ta Savol Palitrasi</h4>
+                  <span class="badge-mini gold" id="finalPaletteBadge">0 / 50</span>
+                </div>
+                <div class="qp-grid final-50" id="finalPaletteGrid">
+                  <!-- Dynamically populated buttons 1..50 -->
+                </div>
+                <div class="qp-legend">
+                  <div class="qp-legend-row"><span class="qp-dot answered"></span> Belgilangan javob</div>
+                  <div class="qp-legend-row"><span class="qp-dot active"></span> Hozirgi savol</div>
+                  <div class="qp-legend-row"><span class="qp-dot pending"></span> Belgilanmagan</div>
+                </div>
+              </aside>
+            </div>
+          </div>
+
+          <!-- FINAL REPORT -->
+          <div class="exam-report-view" id="finalReport" style="display: none;">
+            <div class="report-header official">
+              <div class="report-score-donut" id="finalScoreDonut">0%</div>
+              <h2 id="finalVerdictTitle">Attestatsiya Yakuniy Bahosi</h2>
+              <p id="finalVerdictSubtitle">Hisoblangan toifa ko'rsatkichi</p>
+              <div class="report-actions-row">
+                <button class="btn btn-warning" id="finalCopyAiBtn">📋 To'liq Natijani AI ga Nusxalash</button>
+                <button class="btn btn-subtle" id="finalRetryBtn">🔄 Qayta topshirish</button>
+              </div>
+            </div>
+            <div class="report-review-list" id="finalReviewList"></div>
+          </div>
+        </section>
+
+        <!-- 4. TAB: DYNAMIC ANALYTICS -->
+        <section id="analyticsTab" class="content-tab">
+          <div class="analytics-hero-card">
+            <div class="hero-left">
+              <span class="hero-tag">JONLI TA'LIM DIAGNOSTIKASI</span>
+              <h2 id="analyticsHeroTitle">Sizning Hozirgi Tayyorgarligingiz: 2-Toifa</h2>
+              <p id="analyticsHeroDesc">Har bir test natijalari asosida real vaqtda yangilanadi.</p>
+            </div>
+            <div class="hero-gauge">
+              <div class="gauge-circle" id="analyticsGaugeScore">67%</div>
+              <span>Umumiy Aniqlik</span>
+            </div>
+          </div>
+
+          <div class="kpi-cards-grid">
+            <div class="kpi-card">
+              <div class="kpi-icon">📝</div>
+              <div class="kpi-data">
+                <span class="kpi-num" id="kpiTotalTests">30</span>
+                <span class="kpi-label">Ishlangan Testlar</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon">🎯</div>
+              <div class="kpi-data">
+                <span class="kpi-num text-success" id="kpiCorrectTests">20</span>
+                <span class="kpi-label">To'g'ri Javoblar</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon">⚡</div>
+              <div class="kpi-data">
+                <span class="kpi-num text-accent" id="kpiLastScore">50%</span>
+                <span class="kpi-label">Oxirgi Natija</span>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon">🏅</div>
+              <div class="kpi-data">
+                <span class="kpi-num text-warning">70%</span>
+                <span class="kpi-label">2-Toifa Normativi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- JONLI ZAIF VA KUCHLI MAVZULAR -->
+          <div class="diagnostics-split-grid">
+            <div class="diag-card weak-card">
+              <div class="diag-card-header">
+                <h3>⚠️ Zaif Nuqtalar (Diqqat Qaratish Kerak):</h3>
+                <span class="badge-mini warn" id="weakCountBadge">3 ta mavzu</span>
+              </div>
+              <p class="diag-desc">Ushbu mavzularda xatolar kuzatildi va ular ustida ishlash tavsiya etiladi:</p>
+              <ul class="diag-list" id="analyticsWeakList">
+                <!-- Dynamically injected real weak topics -->
+              </ul>
+            </div>
+
+            <div class="diag-card strong-card">
+              <div class="diag-card-header">
+                <h3>✅ O'zlashtirilgan Kuchli Mavzular:</h3>
+                <span class="badge-mini success" id="strongCountBadge">3 ta mavzu</span>
+              </div>
+              <p class="diag-desc">Ushbu mavzularda to'liq aniqlik ko'rsatildi:</p>
+              <ul class="diag-list" id="analyticsStrongList">
+                <!-- Dynamically injected real strong topics -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- 30-KUNLIK KURS DINAMIKASI VA XARITASI (HEATMAP) -->
+          <div class="roadmap-grid-card">
+            <div class="roadmap-header">
+              <div>
+                <h3>🗺️ 30 Kunlik Toifa Rejasi & Har Bir Kunning O'zlashtirilishi</h3>
+                <p class="diag-desc">Istalgan kunga bosib, to'g'ridan-to'g'ri o'sha dars yoki testga o'tishingiz mumkin.</p>
+              </div>
+              <div class="roadmap-legend">
+                <span class="leg-item"><span class="leg-dot done"></span> Bajarilgan (70%+)</span>
+                <span class="leg-item"><span class="leg-dot review"></span> Takrorlash kerak (50%)</span>
+                <span class="leg-item"><span class="leg-dot active"></span> Faol kun</span>
+                <span class="leg-item"><span class="leg-dot pending"></span> Rejada</span>
+              </div>
+            </div>
+            <div class="days-heatmap-grid" id="analyticsHeatmapGrid">
+              <!-- Dynamically populated 30 days cards -->
+            </div>
+          </div>
+
+          <!-- KUNLIK TESTLAR TARIXI JADVALI -->
+          <div class="history-table-card">
+            <h3>📈 Kunlik Mashg'ulotlar Tarixi</h3>
+            <div class="table-responsive">
+              <table class="history-table">
+                <thead>
+                  <tr>
+                    <th>Kun</th>
+                    <th>Mavzu</th>
+                    <th>Savollar</th>
+                    <th>To'g'ri</th>
+                    <th>Aniqlik</th>
+                    <th>Holat</th>
+                  </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                  <!-- Dynamically populated history -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- SIDEBAR BACKDROP FOR MOBILE -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+  </div>
+
+  <!-- MOBILE BOTTOM NAVIGATION (PWA & TMA) -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <button class="mb-nav-btn active" data-tab="theory">
+      <span class="mb-icon">📖</span>
+      <span class="mb-text">Dars</span>
+    </button>
+    <button class="mb-nav-btn" data-tab="exam">
+      <span class="mb-icon">✍️</span>
+      <span class="mb-text">Kunlik</span>
+    </button>
+    <button class="mb-nav-btn" data-tab="finalExam">
+      <span class="mb-icon">🏆</span>
+      <span class="mb-text">Mock 50</span>
+    </button>
+    <button class="mb-nav-btn" data-tab="analytics">
+      <span class="mb-icon">📊</span>
+      <span class="mb-text">Tahlil</span>
+    </button>
+    <button class="mb-nav-btn" id="mobileSyllabusTriggerBtn">
+      <span class="mb-icon">📅</span>
+      <span class="mb-text">30-Kun</span>
+    </button>
+  </nav>
+
+  <script src="js/curriculum.js"></script>
+  <script src="js/mock_exam.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

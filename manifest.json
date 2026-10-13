@@ -1,0 +1,20 @@
+{
+  "name": "Toifa Pro — Ingliz Tili Attestatsiya Platformasi",
+  "short_name": "Toifa Pro",
+  "description": "Pedagoglar uchun 30 kunlik intensiv toifa attestatsiyasi (Mutaxassis ➔ 2-Toifa) mobil trenajyori",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

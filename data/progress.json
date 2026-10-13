@@ -1,0 +1,123 @@
+{
+  "fan": "Ingliz tili",
+  "maqsad": "2-toifa",
+  "imtihon_sanasi": "2026-10-30",
+  "kunlik_vaqt_soat": 2,
+  "joriy_kun": 2,
+  "holat": "2-kun faol (Conditionals & TBL)",
+  "oxirgi_yangilangan_vaqt": "2026-10-13 22:45",
+  "kunlar": [
+    {
+      "kun": 1,
+      "sana": "2026-10-14",
+      "grammatika": "Inversion (Negative & Conditional)",
+      "metodika": "Dars bosqichlari: Warm-up va PPP modeli",
+      "status": "completed"
+    },
+    {
+      "kun": 2,
+      "sana": "2026-10-15",
+      "grammatika": "Conditionals (0, 1, 2, 3, Mixed) + TBL & CLT",
+      "metodika": "TBL (Task-Based Learning) va CLT",
+      "status": "in_progress"
+    },
+    {
+      "kun": 3,
+      "sana": "2026-10-16",
+      "grammatika": "Subjunctive mood va Causative verbs",
+      "metodika": "Formative vs Summative Assessment",
+      "status": "pending"
+    },
+    {
+      "kun": 4,
+      "sana": "2026-10-17",
+      "grammatika": "Gerund vs Infinitive",
+      "metodika": "Feedback berish va xatolarni tuzatish",
+      "status": "pending"
+    },
+    {
+      "kun": 5,
+      "sana": "2026-10-18",
+      "grammatika": "Participle Clauses",
+      "metodika": "Bloom taksonomiyasi va savol berish",
+      "status": "pending"
+    },
+    {
+      "kun": 6,
+      "sana": "2026-10-19",
+      "grammatika": "Wish, If only, As if, It's time",
+      "metodika": "SMART dars maqsadlari",
+      "status": "pending"
+    },
+    {
+      "kun": 7,
+      "sana": "2026-10-20",
+      "grammatika": "Passive Voice va Reporting verbs",
+      "metodika": "Classroom Management (Guruh/Juftlik ishlari)",
+      "status": "pending"
+    },
+    {
+      "kun": 8,
+      "sana": "2026-10-21",
+      "grammatika": "Relative Clauses",
+      "metodika": "O'quvchi motivatsiyasi va yosh xususiyatlari",
+      "status": "pending"
+    },
+    {
+      "kun": 9,
+      "sana": "2026-10-22",
+      "grammatika": "Past Modals (deduction & regret)",
+      "metodika": "4 ta ko'nikma (R, W, L, S) integratsiyasi",
+      "status": "pending"
+    },
+    {
+      "kun": 10,
+      "sana": "2026-10-23",
+      "grammatika": "Prepositions & Dependent prepositions",
+      "metodika": "Pedagogik nizolar va nizolarni boshqarish",
+      "status": "pending"
+    },
+    {
+      "kun": 11,
+      "sana": "2026-10-24",
+      "grammatika": "Phrasal Verbs (Toifada eng ko'p tushadigan 40 ta)",
+      "metodika": "Milliy o'quv dasturi (National Curriculum) talablari",
+      "status": "pending"
+    },
+    {
+      "kun": 12,
+      "sana": "2026-10-25",
+      "grammatika": "Reading Strategiyalari (Skimming, Scanning, Inferring)",
+      "metodika": "Inklyuziv ta'lim asoslari",
+      "status": "pending"
+    },
+    {
+      "kun": 13,
+      "sana": "2026-10-26",
+      "grammatika": "Confusing Words va Collocations",
+      "metodika": "Attestatsiya qonunchiligi va baholash nizomi",
+      "status": "pending"
+    },
+    {
+      "kun": 14,
+      "sana": "2026-10-27",
+      "grammatika": "1-TO'LIQ MOCK TEST (Variant A)",
+      "metodika": "Xatolar tahlili va diagnostika",
+      "status": "pending"
+    },
+    {
+      "kun": 15,
+      "sana": "2026-10-28",
+      "grammatika": "2-TO'LIQ MOCK TEST (Variant B)",
+      "metodika": "Xatolar tahlili va diagnostika",
+      "status": "pending"
+    },
+    {
+      "kun": 16,
+      "sana": "2026-10-29",
+      "grammatika": "Blitz-Takrorlash: Toifaning nozik tuzoqlari",
+      "metodika": "Imtihon kuni strategiyasi va psixologiya",
+      "status": "pending"
+    }
+  ]
+}

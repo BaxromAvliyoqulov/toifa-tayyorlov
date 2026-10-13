@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1201,
+    "topic": "12-Kun Darsi (Grammar)",
+    "question": "Which of the following sentences correctly illustrates the primary rule of 12-Kun Darsi?",
+    "options": [
+      "The standard grammatical inversion without auxiliary inversion",
+      "The sentence following the standard inverted word order correctly",
+      "The clause violating tense agreement rules",
+      "The informal colloquial idiom"
+    ],
+    "correct": 1,
+    "explanation": "12-Kun Darsi bo'yicha grammatik qoidaga muvofiq, yordamchi so'z va mantiqiy tuzilma to'g'ri qo'llanilishi lozim."
+  },
+  {
+    "id": 1202,
+    "topic": "12-Kun Darsi (Metodika)",
+    "question": "Identify the common error teachers often encounter when students practice 12-Kun Darsi:",
+    "options": [
+      "Applying the rule in affirmative contexts instead of non-assertive ones",
+      "Confusing the tense sequence between past and future hypotheticals",
+      "Misplacing the auxiliary verb before the subject inappropriately",
+      "Omitting the obligatory preposition"
+    ],
+    "correct": 2,
+    "explanation": "O'quvchilar ko'pincha 12-Kun Darsi mavzusida yordamchi fe'l o'rnini adashtirib qo'yishadi."
+  },
+  {
+    "id": 1203,
+    "topic": "12-Kun Darsi (Lexis)",
+    "question": "In the context of the UzBMB / DemoTest certification exam, which choice best completes: \"Hardly _______ the classroom when the inspection committee entered\"?",
+    "options": [
+      "had the teacher entered",
+      "the teacher had entered",
+      "did the teacher enter",
+      "was the teacher entering"
+    ],
+    "correct": 0,
+    "explanation": "'Hardly' gap boshida kelganda Past Perfect zamonida inversiya yuz beradi: 'had the teacher entered'."
+  },
+  {
+    "id": 1204,
+    "topic": "12-Kun Darsi (UzBMB Standart)",
+    "question": "From a methodological perspective, how should 12-Kun Darsi be presented to ensure communicative competence?",
+    "options": [
+      "Rote memorization of isolated formulas with no context",
+      "Immediate deductive explanation followed by twenty drill exercises",
+      "Inductive guided discovery using authentic contextual dialogues",
+      "Translating every single sentence into the native language"
+    ],
+    "correct": 2,
+    "explanation": "Zamonaviy metodika talabiga ko'ra, qoida kontekst ichida 'Guided Discovery' (yo'naltirilgan kashfiyot) orqali kiritilishi lozim."
+  },
+  {
+    "id": 1205,
+    "topic": "12-Kun Darsi (Grammar)",
+    "question": "Choose the grammatically acceptable sentence regarding 12-Kun Darsi:",
+    "options": [
+      "Under no circumstances should mobile phones be used during the exam.",
+      "Under no circumstances mobile phones should be used during the exam.",
+      "Under no circumstances phones to be used during the exam.",
+      "Under no circumstances should phones being used during the exam."
+    ],
+    "correct": 0,
+    "explanation": "'Under no circumstances' inkor iborasi gap boshida kelsa, 'should + ega + be used' inversiya tartibida bo'ladi."
+  },
+  {
+    "id": 1206,
+    "topic": "12-Kun Darsi (Metodika)",
+    "question": "Select the correct form: \"Had I known about the changes in the syllabus, I _______ differently.\"",
+    "options": [
+      "would prepare",
+      "would have prepared",
+      "will prepare",
+      "had prepared"
+    ],
+    "correct": 1,
+    "explanation": "Type 3 shart inversiyasida 'Had + V3' ga javoban bosh gapda 'would have + V3' ishlatiladi."
+  },
+  {
+    "id": 1207,
+    "topic": "12-Kun Darsi (Lexis)",
+    "question": "Which pedagogical principle aligns best with the current National Curriculum for secondary schools?",
+    "options": [
+      "Focusing purely on grammar accuracy at the expense of speaking",
+      "Prioritizing communicative fluency and real-world task performance",
+      "Strict teacher-centered lectures throughout the lesson",
+      "Excluding formative feedback from continuous grading"
+    ],
+    "correct": 1,
+    "explanation": "Milliy o'quv dasturi darsda muloqotga asoslangan kompetensiyaviy yondashuvni (CLT) asosiy o'ringa qo'yadi."
+  },
+  {
+    "id": 1208,
+    "topic": "12-Kun Darsi (UzBMB Standart)",
+    "question": "Complete the sentence: \"It is imperative that every candidate _______ on time.\"",
+    "options": [
+      "arrive",
+      "arrives",
+      "arrived",
+      "is arriving"
+    ],
+    "correct": 0,
+    "explanation": "Subjunctive qoidasiga ko'ra ('It is imperative that'), fe'l shaxsga qaramasdan Bare Infinitive (arrive) shaklida bo'ladi."
+  },
+  {
+    "id": 1209,
+    "topic": "12-Kun Darsi (Grammar)",
+    "question": "What distinguishes Formative Assessment from Summative Assessment?",
+    "options": [
+      "It happens only at the end of the academic term",
+      "It focuses on ongoing learning improvement and constructive feedback",
+      "It ranks students against national percentiles",
+      "It always involves a high-stakes written test"
+    ],
+    "correct": 1,
+    "explanation": "Formatif baholash yakuniy baho qo'yish uchun emas, o'quv jarayonida bilimni yaxshilash va yo'naltirish uchun xizmat qiladi."
+  },
+  {
+    "id": 1210,
+    "topic": "12-Kun Darsi (Metodika)",
+    "question": "Select the sentence with the correct participle clause:",
+    "options": [
+      "Having finished the test, the papers were collected by the proctor.",
+      "Having finished the test, the students handed in their papers.",
+      "Finishing the test, the proctor collected the students.",
+      "Finished the test, the students leaves the room."
+    ],
+    "correct": 1,
+    "explanation": "Participle clause da ega bir xil bo'lishi shart (Dangling participle xatosiga yo'l qo'ymaslik kerak)."
+  },
+  {
+    "id": 1211,
+    "topic": "12-Kun Darsi (Lexis)",
+    "question": "Identify the sentence where \"wish\" expresses an annoyance or desire for someone else to change behavior:",
+    "options": [
+      "I wish I were taller.",
+      "I wish it had not rained yesterday.",
+      "I wish you would stop tapping your pen on the desk.",
+      "I wish I knew the answer."
+    ],
+    "correct": 2,
+    "explanation": "'Wish + would' boshqa shaxsning xulq-atvoridan norozilik va to'xtatishni talab qilishda ishlatiladi."
+  },
+  {
+    "id": 1212,
+    "topic": "12-Kun Darsi (UzBMB Standart)",
+    "question": "Choose the correct passive form: \"People believe that the ancient artifact was stolen last week.\"",
+    "options": [
+      "The ancient artifact is believed to have been stolen last week.",
+      "The ancient artifact was believed to be stolen last week.",
+      "The ancient artifact is believed to be stolen last week.",
+      "The ancient artifact has believed to stolen last week."
+    ],
+    "correct": 0,
+    "explanation": "Hozirgi ishonch (is believed), lekin o'tmishdagi voqea (last week) bo'lgani uchun 'to have been stolen' bo'ladi."
+  },
+  {
+    "id": 1213,
+    "topic": "12-Kun Darsi (Grammar)",
+    "question": "In language teaching methodology, what does the acronym TTT stand for, and what is the ideal recommendation?",
+    "options": [
+      "Total Teaching Time; it should exceed 90%",
+      "Teacher Talk Time; it should be minimized to maximize STT",
+      "Task Testing Technique; it should be applied once weekly",
+      "Target Topic Transmission; it should guide grammar drills"
+    ],
+    "correct": 1,
+    "explanation": "TTT (Teacher Talk Time) — o'qituvchi gapirish vaqti iloji boricha kamaytirilib, o'quvchi nutqiga (STT) ko'proq vaqt ajratilishi kerak."
+  },
+  {
+    "id": 1214,
+    "topic": "12-Kun Darsi (Metodika)",
+    "question": "Which phrasal verb means \"to tolerate or endure an unpleasant situation\"?",
+    "options": [
+      "put up with",
+      "look forward to",
+      "run out of",
+      "get along with"
+    ],
+    "correct": 0,
+    "explanation": "'Put up with' — chidamoq, sabr qilmoq (tolerate)."
+  },
+  {
+    "id": 1215,
+    "topic": "12-Kun Darsi (Lexis)",
+    "question": "Which reading technique is most appropriate when scanning a train schedule for the arrival time at Bukhara?",
+    "options": [
+      "Intensive analytical reading",
+      "Skimming for main theme",
+      "Scanning for specific keyword/number",
+      "Extensive critical appraisal"
+    ],
+    "correct": 2,
+    "explanation": "Jadvaldan aniq vaqt yoki manzilni topish — bu 'Scanning' strategiyasidir."
+  },
+  {
+    "id": 1216,
+    "topic": "12-Kun Darsi (UzBMB Standart)",
+    "question": "Select the correct collocation: \"The school director made a significant _______ to improve the campus infrastructure.\"",
+    "options": [
+      "effort",
+      "action",
+      "deed",
+      "working"
+    ],
+    "correct": 0,
+    "explanation": "Ingliz tilida 'make an effort' (harakat qilmoq, kuch sarflamoq) qat'iy kollokatsiyasi ishlatiladi."
+  }
+]
