@@ -11,7 +11,7 @@
 
 ## 🚦 HOZIRGI PROGRESS (FAOL KUN)
 * **Joriy holat:** 2-KUN TESTI ISHLANDI (Natija: 5/10 — 50%). Zaif mavzular: Mixed Conditionals, Inversion if-omission, Task completion.
-* **Tizim yangilanishi:** Ekranning har bir pikselidan oqilona foydalanildi: Widescreen (1720px) to'liq kenglik, 30 kunlik interaktiv Heatmap/Roadmap gridi, Nazariya uchun 2 ustunli Sticky konspekt va Attestatsiya Savollar Navigatsiya Palitrasi qo'shildi. Bo'sh oq maydonlar bartaraf etildi.
+* **Tizim yangilanishi:** Barcha 30 kunlik darslar (1-30) uchun nusxa shablonlar butunlay olib tashlandi: har bir kunga alohida mukammal nazariya, qoliplar, formulalar, pedagogik metodika va unikal attestatsiya tuzoqlari integratsiya qilindi. Favicon ulanishi to'liq tuzatildi.
 * **Navbatdagi dars:** **3-KUN** — *Subjunctive mood & Causative verbs + Formative/Summative assessment*
 
 ---

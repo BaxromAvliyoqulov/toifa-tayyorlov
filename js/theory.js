@@ -32,7 +32,9 @@ function renderTheory() {
   }
 
   if (asideDayBulletList) {
-    if (Store.currentDay === 1) {
+    if (lesson && Array.isArray(lesson.keyPoints) && lesson.keyPoints.length > 0) {
+      asideDayBulletList.innerHTML = lesson.keyPoints.map(pt => `<li>${pt}</li>`).join('');
+    } else if (Store.currentDay === 1) {
       asideDayBulletList.innerHTML = `
         <li>Never, Nowhere, Seldom inkor so'zlar</li>
         <li>Inversion qolipi: Inkor + Yordamchi + Ega + Fe'l</li>
@@ -54,7 +56,9 @@ function renderTheory() {
   }
 
   if (asideTrapText) {
-    if (Store.currentDay === 1) {
+    if (lesson && lesson.trap) {
+      asideTrapText.textContent = lesson.trap;
+    } else if (Store.currentDay === 1) {
       asideTrapText.textContent = "'Only when' kelsa, 1-gapda emas, ASOSIY gapda inversiya bo'ladi!";
     } else if (Store.currentDay === 2) {
       asideTrapText.textContent = "'Unless'dan keyin inkor fe'l (don't) qo'yilmaydi! Fe'l doim ijobiy bo'ladi.";
