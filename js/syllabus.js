@@ -141,13 +141,20 @@ function renderSyllabusList() {
 }
 
 function applySidebarState() {
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 860;
   if (Store.isSidebarCollapsed) {
     if (DOM.sidebar) DOM.sidebar.classList.add('collapsed');
     if (DOM.sidebarBackdrop) DOM.sidebarBackdrop.classList.remove('active');
     if (DOM.sidebarFloatingOpenBtn) DOM.sidebarFloatingOpenBtn.style.display = 'flex';
   } else {
     if (DOM.sidebar) DOM.sidebar.classList.remove('collapsed');
-    if (DOM.sidebarBackdrop) DOM.sidebarBackdrop.classList.add('active');
+    if (DOM.sidebarBackdrop) {
+      if (isMobile) {
+        DOM.sidebarBackdrop.classList.add('active');
+      } else {
+        DOM.sidebarBackdrop.classList.remove('active');
+      }
+    }
     if (DOM.sidebarFloatingOpenBtn) DOM.sidebarFloatingOpenBtn.style.display = 'none';
   }
   if (typeof updateTelegramBackButton === 'function') {

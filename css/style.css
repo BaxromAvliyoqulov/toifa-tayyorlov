@@ -1451,21 +1451,9 @@ body {
 /* ============================================================================
    MOBILE BOTTOM NAVIGATION & TMA (TELEGRAM MINI APP) RESPONSIVE STYLES
    ============================================================================ */
+/* SIDEBAR BACKDROP (MOBILE ONLY) */
 .sidebar-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.45);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 990;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-}
-
-.sidebar-backdrop.active {
-  opacity: 1;
-  pointer-events: auto;
+  display: none;
 }
 
 .mobile-bottom-nav {
@@ -1530,6 +1518,24 @@ body {
 
 /* RESPONSIVE MEDIA QUERIES (TABLET & MOBILE) */
 @media (max-width: 860px) {
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 990;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .sidebar-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .mobile-bottom-nav {
     display: flex;
   }

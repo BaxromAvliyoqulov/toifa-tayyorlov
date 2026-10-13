@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Toifa Pro — Ingliz Tili Attestatsiya Platformasi (2026)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -11,14 +13,17 @@
   <link rel="manifest" href="data/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
-  <link rel="alternate icon" href="data/favicon.svg">
-  <link rel="apple-touch-icon" href="data/favicon.svg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data/favicon/favicon.svg">
+  <link rel="alternate icon" href="data/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="data/favicon/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
   <!-- Telegram Mini App SDK -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
+
 <body>
   <div class="app-layout">
     <!-- SIDEBAR -->
@@ -31,8 +36,10 @@
             <span>2026 Attestatsiya</span>
           </div>
         </div>
-        <button class="sidebar-close-btn" id="sidebarCollapseBtn" title="Yon menyuni yashirish" aria-label="Yon menyuni yashirish">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="sidebar-close-btn" id="sidebarCollapseBtn" title="Yon menyuni yashirish"
+          aria-label="Yon menyuni yashirish">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
         </button>
@@ -78,7 +85,9 @@
       <div class="sidebar-countdown">
         <div class="cd-title">IMTIHON KUNI: 30-OKTABR</div>
         <div class="cd-number">17 KUN QOLDI</div>
-        <div class="cd-bar"><div class="cd-bar-fill" style="width: 45%;"></div></div>
+        <div class="cd-bar">
+          <div class="cd-bar-fill" style="width: 45%;"></div>
+        </div>
       </div>
     </aside>
 
@@ -87,8 +96,10 @@
       <!-- HEADER -->
       <header class="app-header">
         <div class="header-left">
-          <button class="sidebar-open-btn" id="sidebarFloatingOpenBtn" title="Yon menyuni ochish" aria-label="Yon menyuni ochish" style="display: none;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <button class="sidebar-open-btn" id="sidebarFloatingOpenBtn" title="Yon menyuni ochish"
+            aria-label="Yon menyuni ochish" style="display: none;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -112,7 +123,7 @@
 
       <!-- APP CONTENT BODY -->
       <div class="app-body">
-        
+
         <!-- 1. TAB: THEORY -->
         <section id="theoryTab" class="content-tab active">
           <div class="theory-split-layout">
@@ -135,7 +146,8 @@
                 </div>
                 <div class="tac-trap-box">
                   <strong>⚠️ Attestatsiya Tuzog'i:</strong>
-                  <span id="asideTrapText">Savollardagi shoshqaloqlik va chalg'ituvchi variantlardan ehtiyot bo'ling!</span>
+                  <span id="asideTrapText">Savollardagi shoshqaloqlik va chalg'ituvchi variantlardan ehtiyot
+                    bo'ling!</span>
                 </div>
                 <div class="tac-btn-box">
                   <button class="btn btn-primary btn-lg w-full" id="theoryGoTestBtn">
@@ -178,7 +190,9 @@
             <div class="arena-bar">
               <div class="arena-progress">
                 <span>Savol <strong id="dailyQNum">1</strong> / 10</span>
-                <div class="arena-progress-bar"><div class="arena-bar-fill" id="dailyProgressBar" style="width: 10%;"></div></div>
+                <div class="arena-progress-bar">
+                  <div class="arena-bar-fill" id="dailyProgressBar" style="width: 10%;"></div>
+                </div>
               </div>
               <div class="arena-timer" id="dailyTimerBox">
                 ⏱️ Qolgan vaqt: <span id="dailyTimerDigits">10:00</span>
@@ -195,7 +209,8 @@
                 <div class="arena-nav">
                   <button class="btn btn-subtle" id="dailyPrevBtn" disabled>⬅️ Oldingisi</button>
                   <button class="btn btn-primary" id="dailyNextBtn">Keyingisi ➡️</button>
-                  <button class="btn btn-success" id="dailyFinishBtn" style="display: none;">🏁 Testni Yakunlash</button>
+                  <button class="btn btn-success" id="dailyFinishBtn" style="display: none;">🏁 Testni
+                    Yakunlash</button>
                 </div>
               </div>
 
@@ -239,7 +254,8 @@
             <div class="lobby-box official">
               <div class="lobby-badge gold">UZBMB / DEMOTEST 2026</div>
               <h2>Rasmiy Davlat Attestatsiyasi Mock Imtihoni</h2>
-              <p>50 ta savol: 35 ta Mutaxassislik (Grammar/Lexis), 5 ta Reading matn tahlili, 7 ta Metodika va 3 ta Milliy kasbiy standartlar.</p>
+              <p>50 ta savol: 35 ta Mutaxassislik (Grammar/Lexis), 5 ta Reading matn tahlili, 7 ta Metodika va 3 ta
+                Milliy kasbiy standartlar.</p>
               <div class="lobby-meta-row">
                 <div class="meta-card">
                   <span class="meta-val">50</span>
@@ -264,7 +280,9 @@
               <div class="arena-progress">
                 <span>Savol <strong id="finalQNum">1</strong> / 50</span>
                 <span class="badge-mini" id="finalSectionBadge">Grammar & Lexis</span>
-                <div class="arena-progress-bar"><div class="arena-bar-fill" id="finalProgressBar" style="width: 2%;"></div></div>
+                <div class="arena-progress-bar">
+                  <div class="arena-bar-fill" id="finalProgressBar" style="width: 2%;"></div>
+                </div>
               </div>
               <div class="arena-timer" id="finalTimerBox">
                 ⏱️ Qolgan vaqt: <span id="finalTimerDigits">100:00</span>
@@ -281,7 +299,8 @@
                 <div class="arena-nav">
                   <button class="btn btn-subtle" id="finalPrevBtn" disabled>⬅️ Oldingisi</button>
                   <button class="btn btn-primary" id="finalNextBtn">Keyingisi ➡️</button>
-                  <button class="btn btn-success" id="finalFinishBtn" style="display: none;">🏁 Imtihonni Yakunlash</button>
+                  <button class="btn btn-success" id="finalFinishBtn" style="display: none;">🏁 Imtihonni
+                    Yakunlash</button>
                 </div>
               </div>
 
@@ -392,7 +411,8 @@
             <div class="roadmap-header">
               <div>
                 <h3>🗺️ 30 Kunlik Toifa Rejasi & Har Bir Kunning O'zlashtirilishi</h3>
-                <p class="diag-desc">Istalgan kunga bosib, to'g'ridan-to'g'ri o'sha dars yoki testga o'tishingiz mumkin.</p>
+                <p class="diag-desc">Istalgan kunga bosib, to'g'ridan-to'g'ri o'sha dars yoki testga o'tishingiz mumkin.
+                </p>
               </div>
               <div class="roadmap-legend">
                 <span class="leg-item"><span class="leg-dot done"></span> Bajarilgan (70%+)</span>
@@ -473,4 +493,5 @@
   <script src="js/analytics.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
