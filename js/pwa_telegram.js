@@ -60,7 +60,7 @@ function triggerHaptic(type = 'light') {
 function initPwaServiceWorker() {
   if (typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js').then((reg) => {
+      navigator.serviceWorker.register('./js/sw.js').then((reg) => {
         console.log('Toifa Pro PWA Service Worker aktiv:', reg.scope);
       }).catch((err) => {
         console.warn('Service Worker bildirishnomasi:', err);

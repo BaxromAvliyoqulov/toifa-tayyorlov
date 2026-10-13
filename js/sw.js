@@ -5,8 +5,8 @@ const CACHE_NAME = 'toifa-pro-v1';
 const STATIC_ASSETS = [
   './',
   './index.html',
-  './manifest.json',
-  './favicon.svg',
+  './data/manifest.json',
+  './data/favicon.svg',
   './css/style.css',
   './js/curriculum.js',
   './js/mock_exam.js',
