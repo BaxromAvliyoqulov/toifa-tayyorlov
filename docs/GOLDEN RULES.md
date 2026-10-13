@@ -11,7 +11,7 @@
 
 ## 🚦 HOZIRGI PROGRESS (FAOL KUN)
 * **Joriy holat:** 2-KUN TESTI ISHLANDI (Natija: 5/10 — 50%). Zaif mavzular: Mixed Conditionals, Inversion if-omission, Task completion.
-* **Tizim yangilanishi:** Barcha 30 kunlik darslar (1-30) uchun nusxa shablonlar butunlay olib tashlandi: har bir kunga alohida mukammal nazariya, qoliplar, formulalar, pedagogik metodika va unikal attestatsiya tuzoqlari integratsiya qilindi. Favicon ulanishi to'liq tuzatildi.
+* **Tizim yangilanishi:** Barcha 30 kunlik darslar professional akademik darajaga ko'tarildi: qiyosiy jadvallar (.theory-table), lingvistik tahlillar, pedagogik keyslar (Case Study), va har bir kun uchun CEFR B2/C1 me'yoridagi chuqur nazariya bilan ta'minlandi.
 * **Navbatdagi dars:** **3-KUN** — *Subjunctive mood & Causative verbs + Formative/Summative assessment*
 
 ---
