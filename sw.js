@@ -9,6 +9,15 @@ const STATIC_ASSETS = [
   './favicon.svg',
   './css/style.css',
   './js/curriculum.js',
+  './js/mock_exam.js',
+  './js/state.js',
+  './js/dom.js',
+  './js/pwa_telegram.js',
+  './js/syllabus.js',
+  './js/theory.js',
+  './js/daily_exam.js',
+  './js/final_exam.js',
+  './js/analytics.js',
   './js/app.js',
   './data/tests/tests_index.json'
 ];
